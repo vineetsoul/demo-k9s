@@ -1,0 +1,30 @@
+# Three dashes optionally mark the start of a document
+---
+app_settings:
+  name: "My Web Application"
+  environment: "production"
+  version: 1.4.2
+  debug_mode: false
+
+server:
+  host: "127.0.0.1"
+  port: 8080
+  allowed_hosts:
+    - "localhost"
+    - "example.com"
+    - "://example.com"
+
+database:
+  provider: "postgresql"
+  connections:
+    max_pool: 20
+    timeout_seconds: 30
+  credentials:
+    username: "admin_user"
+    # It is best practice to load secret values from environmental variables
+    password: ${DB_PASSWORD}
+
+features:
+  enable_signup: true
+  enable_payments: false
+  max_file_upload_mb: 15.5
