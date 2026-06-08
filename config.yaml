@@ -22,7 +22,7 @@ database:
   credentials:
     username: "admin_user"
     # It is best practice to load secret values from environmental variables
-    password: Asdmin@33321
+    password: ${DB_PASSWORD}
 
 features:
   enable_signup: true
