@@ -10,6 +10,7 @@ server:
   host: "127.0.0.1"
   port: 8080
   password: ${DB_PASSWORD}
+  password1: ${DB_PASSWORD1}
   allowed_hosts:
     - "localhost"
     - "example.com"
