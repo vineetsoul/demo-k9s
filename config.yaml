@@ -22,7 +22,7 @@ database:
   credentials:
     ***REMOVED***
     # It is best practice to load secret values from environmental variables
-    password: ${DB_PASSWORD}
+    ***REMOVED***
 
 features:
   enable_signup: true
